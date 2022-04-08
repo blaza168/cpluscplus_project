@@ -1,0 +1,3 @@
+/home/jan/Desktop/directory/school/4/cplusplus/project_new/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jan/Desktop/directory/school/4/cplusplus/project_new/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jan/Desktop/directory/school/4/cplusplus/project_new/cmake-build-debug/CMakeFiles/project_new.dir
