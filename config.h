@@ -6,29 +6,38 @@
 #define PROJECT_NEW_CONFIG_H
 
 
-#include "data.h"
 #include <iostream>
 #include <vector>
+#include <map>
 
 using namespace std;
 
 class config {
 private:
-    vector<data> v;
+    map<string, string> m;
 
 public:
     // constructors
+    config() {};
     config(string filename);
     config(config &c);
 
     // methods
     void save(string filename);
     bool contains_key(string key);
+    void insert(string key, string value);
+    void update(string key, string value);
+    void delete_key(string key);
 
     // operators
     string& operator[] (string i);
-    friend ostream& operator << (ostream& out, config& conf);
+    config operator+(config& operand);
+    friend ostream& operator<<(ostream& out, config& conf);
 
+    // Destructor
+    ~config() {
+        this->m.clear();
+    }
 };
 
 
